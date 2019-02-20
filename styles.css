@@ -3,13 +3,26 @@
 }
 
 #header {
-  background: url("clouds.mp4");
   max-height: 500px;
   width: 100%;
 }
 
-#content {
+#header.light-theme {
+  background: url("clouds.mp4");
+}
 
+#header.dark-theme {
+  
+}
+
+#content {
+    // make header stay at top of page
+    position:absolute;
+    top: 50px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    overflow-y:scroll;
 }
 
 #footer {
@@ -20,3 +33,15 @@
   position:fixed;
 }
 
+.content-section {
+   max-height: 500px;
+   width: 100%;
+}
+
+.light-theme {
+  
+}
+
+.dark-theme {
+  
+}
