@@ -1,0 +1,22 @@
+#page {
+
+}
+
+#header {
+  background: url("clouds.mp4");
+  max-height: 500px;
+  width: 100%;
+}
+
+#content {
+
+}
+
+#footer {
+
+}
+
+.fixed {
+  position:fixed;
+}
+
