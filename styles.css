@@ -1,41 +1,198 @@
 #page {
-  height: 100%;
-  width: 100%;
-  padding: 50px;
+    height: 100%;
+    width: 100%;
+    padding: 2rem 2rem 0 2rem;
+    font-family: 'Anton';
+    letter-spacing: 0.075rem;
+    color: black;
 }
 
-#header {
-  top:0;
-  max-height: 500px;
-  width: 100%;
+#header-container {
+    top:0;
+    max-height: 50rem;
+    width: 100%;
+    position: relative;
 }
 
-#header {
-  background: url("clouds.mp4");
+/* ------ BOOTSTRAP SNIPPET ------ */
+
+header {
+    position: relative;
+    background-color: black;
+    height: 17rem;
+    min-height: 17rem;
+    width: 100%;
+    overflow: hidden;
 }
 
-#header.dark-theme {
-  
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* @media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+} */
+
+/* ------ MY STYLES ------ */
+
+#header-intro {
+    position: absolute;
+    bottom: 0;
+    padding: 2%;
+    min-width: 100%;
+    text-align: center; 
+}
+
+#profile-img {
+    /*position: relative;
+    display: inline-block;*/
+    border-radius: 50%;
+    border: 10px solid black;
+    width: 150px;
+    z-index: 100;
+}
+
+#header-text {
+    /*position: absolute;
+    display: inline-block;
+    padding: 0px;
+    height: 50%;
+    width: 40%;
+    text-align: left;
+    line-height: 100%;
+    color: black;
+    background-color: white;
+    border: 4px solid black;
+    margin-left: 9%;
+    margin-top: 2%;*/
+}
+
+#header-text h1 {
+    font-family: 'Lobster';
+    font-size: 45px;
+    letter-spacing: 2px;
+   /* margin-top: 1%;
+    margin-left: 20%; */
+}
+
+#header-text p {
+    /*margin-left: 30%;*/
+}
+
+.navbar-nav {
+    position: absolute;
+    width: 100%;
+}
+
+.nav-item {
+    border-right: 4px solid black;
+}
+
+#nav-tab-right.nav-item {
+    border-right: none;
+}
+
+.nav-link {
+    /*list-style: none;
+    display: inline-block;
+    padding: 2% 8% 2% 8%;*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav-item:hover {
+  /* border-bottom: 4px solid skyblue; */
+}
+
+.nav-link a,
+.nav-link a:visited,
+.nav-link a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+
+.text-icon {
+    max-height: 15px;
 }
 
 #content {
-  margin-top: 50px;
-  margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
-#footer {
-  bottom:0;
-}
-
-.fixed {
-  position:fixed;
+#content h2 {
+    font-family: 'Lobster';
 }
 
 .content-section {
-   max-height: 500px;
-   width: 100%;
+    border-bottom: 2px solid black;
 }
 
-.dark-theme {
+.content-p-container {
+    /*width: 100%;*/
+}
+
+.content-p-container p {
+    /*width: 50%;*/
+}
+
+#footer {
+    bottom:0;
+    padding: 0.5rem;
+    text-align: center;
+    border-top: 4px solid black;
+    background-color:lightgray;
+    font-size: 90%;
+    font-weight: normal;
+}
+
+#footer a {
+    text-decoration: none;
+     color: black;
+}
+
+#footer a:hover {
+    text-decoration: none;
+}
+
+#footer p,
+#footer a {
+    display: inline-block;
+}
+
+
+.content-section {
+    max-height: 500px;
+    width: 100%;
+}
+
+
+/* ------ DARK THEMES ------ */
+
+#header.dark-theme {
   
 }
