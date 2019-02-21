@@ -1,40 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Sondra Coffin</title>
-	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton|Lobster" />
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div id="page">
-		<div id="header">
-			<img src="profile-img.jpeg" id="profile-img"/>
-			<h1 id="page-header">Sondra Coffin</h1>
-			<p id="page-tagline">Web Software Developer</p>
-			<div id="nav-bar">
-				<ul id="nav-tabs">
-					<li class="nav-link"><a href="#about-me">Biography</a></li>
-					<li class="nav-link"><a href="#career">Career Experience</a></li>
-					<li class="nav-link"><a href="#contact-me">Contact Me</a></li>
-					<li class="nav-link"><a href="https://www.linkedin.com/in/sondrac">Connect<a></li>
-				</ul>
-			</div>
+    
+    <div id="page">
+		
+        <div id="header-container">
+            
+            <header>
+                <div class="overlay"></div>
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted">
+                    <source src="/resources/clouds.mp4" type="video/mp4">
+                </video>
+                <div class="container h-100">
+                    <div class="d-flex h-100 text-center align-items-center">
+                        <div id="header-intro" class="row">
+                            <div class="col-md-2">
+                                <img src="/resources/profile-img-circle.gif" id="profile-img"/>
+                            </div>
+                            <div id="header-text" class="col-md-10">
+                                <h1 id="page-header">Sondra Coffin</h1>
+                                <p id="page-tagline">Web Software Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <nav id="navbar" class="navbar navbar-expand-lg container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse row" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav">
+                        <li class="nav-item col-md-3">
+                            <a class="nav-link" href="#about-me" alt="About Me">About Me</a>
+                        </li>
+                        <li class="nav-item col-md-3">
+                            <a class="nav-link" href="#career-experience" alt="Career Experience">Career Experience</a>
+                        </li>
+                        <li class="nav-item  col-md-3">
+                            <a class="nav-link" href="#contact-me" alt="Contact Me">Contact Me</a>
+                        </li>
+                        <li id="nav-tab-right" class="nav-item nav-link col-md-3">
+                            <img class="text-icon" src="/resources/download-icon.png"/>&nbsp;
+                            <a href="sondra-coffin_resume.pdf" download alt="Download Resume">Download Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav> 
 		</div>
+        
 		<div id="content">
 			<div id="about-me" class="content-section">
 				<h2>About Me</h2>
+                <div class="content-p-container">
+                    <p>Cat Ipsum: I'm getting hungry really likes hummus. Need to check on human, have not seen in an hour might be dead oh look, human is alive, hiss at human, feed me russian blue chase after silly colored fish toys around the house or poop on floor and watch human clean up yet stare at guinea pigs, so stare at ceiling. Cough furball into food bowl then scratch owner for a new one. Knock dish off table head butt cant eat out of my own dish bathe self with tongue then lick owner's face and find box a little too small and curl up with fur hanging out . Fooled again thinking the dog likes me allways wanting food. You have cat to be kitten me right meow instantly break out into full speed gallop across the house for no reason scratch me there, elevator butt. Eat plants, meow, and throw up because i ate plants favor packaging over toy bring your owner a dead bird or cat mojo sleep nap hide at bottom of staircase to trip human small kitty warm kitty little balls of fur.</p>
+                </div>
 			</div>
 
-			<div id="career" class="content-section">
+			<div id="career-experience" class="content-section">
 				<h2>Career Experience</h2>
+                <div class="content-p-container">
+                    <p>Cat Ipsum: A nice warm laptop for me to sit on. Snuggles up to shoulders or knees and purrs you to sleep carefully drink from water glass and then spill it everywhere and proceed to lick the puddle yet with tail in the air, try to hold own back foot to clean it but foot reflexively kicks you in face, go into a rage and bite own foot, hard white cat sleeps on a black shirt and scratch the postman wake up lick paw wake up owner meow meow. Eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking a catnap meow go back to sleep owner brings food and water tries to pet on head, so scratch get sprayed by water because bad cat flex claws on the human's belly and purr like a lawnmower do not try to mix old food with new one to fool me!</p>
+                </div>
 			</div>
 
 			<div id="contact-me" class="content-section">
 				<h2>Contact Me</h2>
+                <div class="content-p-container">
+                    <p>Cat Ipsum: Sleep everywhere, but not in my bed meow meow, i tell my human i bet my nine lives on you-oooo-ooo-hooo pounce on unsuspecting person for plop down in the middle where everybody walks play riveting piece on synthesizer keyboard, it's 3am, time to create some chaos . Rub face on owner stare out the window and hiss and stare at nothing then run suddenly away damn that dog purr as loud as possible, be the most annoying cat that you can, and, knock everything off the table.</p>
+                </div>
 			</div>
 		</div>
-		<div id="back-to-top" style:"display:none">^</div>
+		<div id="back-to-top" style="display:none">^</div>
 		<div id="footer">
-			<a href="www.linkedin.com/in/sondrac">LinkedIn</a>
+            <p>&copy; Sondra Coffin, 2019&nbsp; &nbsp; &nbsp; |&nbsp; &nbsp; &nbsp; </p>
+			<a href="https://www.linkedin.com/in/sondrac">View Profile on LinkedIn</a>
 		</div>
 	</div>
 </body>
