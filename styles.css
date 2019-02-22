@@ -1,3 +1,23 @@
+/* img#background-img {
+// Set rules to fill background
+min-height: 100%;
+min-width: 1024px;
+
+// Set up proportionate scaling
+width: 100%;
+height: auto;
+
+// Set up positioning
+position: fixed;
+top: 0;
+left: 0;
+}
+*/
+
+html body {
+    background-color: skyblue;
+}
+
 #page {
     height: 100%;
     width: 100%;
@@ -5,6 +25,7 @@
     font-family: 'Anton';
     letter-spacing: 0.075rem;
     color: black;
+    background-color: white;
 }
 
 #header-container {
@@ -100,6 +121,10 @@ header .container {
     /*margin-left: 30%;*/
 }
 
+#navbar.navbar.navbar-expand-lg.container {
+    margin-top: 2%;
+}
+
 .navbar-nav {
     position: absolute;
     width: 100%;
@@ -122,20 +147,34 @@ header .container {
     text-align: center;
 }
 
-.nav-item:hover {
-  /* border-bottom: 4px solid skyblue; */
+a.nav-link{
+    border-bottom: 2px solid white;
 }
 
-.nav-link a,
-.nav-link a:visited,
-.nav-link a:hover {
+a.nav-link:hover {
+  border-bottom: 2px solid skyblue;
+}
+
+a.nav-link,
+a.nav-link:visited,
+a.nav-link:hover,
+a#resume-download-link {
     text-decoration: none;
     color: black;
 }
 
+a#resume-download-link:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a#resume-download-link.nav-link:hover {
+    text-decoration: none;
+    border-bottom: 2px solid skyblue;
+}
 
 .text-icon {
-    max-height: 15px;
+    
 }
 
 #content {
@@ -144,12 +183,22 @@ header .container {
     text-align: center;
 }
 
+#theme-section.content-section {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 #content h2 {
     font-family: 'Lobster';
 }
 
 .content-section {
     border-bottom: 2px solid black;
+    padding: 5%;
+}
+
+div#contact-me.content-section {
+    border-bottom: none;
 }
 
 .content-p-container {
