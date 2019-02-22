@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="styles.css" />
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/png" href="/resources/sun-icon.png">
 </head>
 <body>
     
-    <div id="page">
+    <!--<img src="/resources/cloudy-sky.jpg" id="background-img">-->
+    
+    <div id="page" class="container">
 		
         <div id="header-container">
             
@@ -36,9 +39,9 @@
             </header>
             
             <nav id="navbar" class="navbar navbar-expand-lg container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                </button>-->
 
                 <div class="collapse navbar-collapse row" id="navbarTogglerDemo02">
                     <ul class="navbar-nav">
@@ -51,9 +54,9 @@
                         <li class="nav-item  col-md-3">
                             <a class="nav-link" href="#contact-me" alt="Contact Me">Contact Me</a>
                         </li>
-                        <li id="nav-tab-right" class="nav-item nav-link col-md-3">
-                            <img class="text-icon" src="/resources/download-icon.png"/>&nbsp;
-                            <a href="sondra-coffin_resume.pdf" download alt="Download Resume">Download Resume</a>
+                        <li id="nav-tab-right" class="nav-item col-md-3">
+                            <!--<img class="text-icon" src="/resources/download-icon.png"/>-->
+                            <a id="resume-download-link" class="nav-link" href="sondra-coffin_resume.pdf" download alt="Download Resume" disabled>Download Resume</a>
                         </li>
                     </ul>
                 </div>
@@ -61,6 +64,9 @@
 		</div>
         
 		<div id="content">
+            <!--<div id="theme-section" class="content-section">
+                <div> ---&gt; Theme switch button will go here &lt;--- </div>
+            </div>-->
 			<div id="about-me" class="content-section">
 				<h2>About Me</h2>
                 <div class="content-p-container">
@@ -83,10 +89,10 @@
 			</div>
 		</div>
 		<div id="back-to-top" style="display:none">^</div>
-		<div id="footer">
-            <p>&copy; Sondra Coffin, 2019&nbsp; &nbsp; &nbsp; |&nbsp; &nbsp; &nbsp; </p>
-			<a href="https://www.linkedin.com/in/sondrac">View Profile on LinkedIn</a>
-		</div>
 	</div>
+    <div id="footer">
+        <p>&copy; Sondra Coffin, 2019&nbsp; &nbsp; &nbsp; |&nbsp; &nbsp; &nbsp; </p>
+        <a href="https://www.linkedin.com/in/sondrac">View Profile on LinkedIn</a>
+    </div>
 </body>
 </html>
